@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <%- include('../partials/head') %>
-    </head>
-    <body>
-        <header>
-            <%- include('../partials/header') %>
-        </header>
-    
-        <img id="dog-image" src="/images/sephy7.jpg" alt="groomed poodle">
-    
-        <div id="logo-large">
-            <img id="logo-large-image" src="/images/uts-grooming.png" alt="logo">
-            <hr id="logo-line-break">
-            <p id="logo-text">professional dog grooming based in houston, tx</p>
+
+<head>
+    <%- include('../partials/head') %>
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <header>
+                <%- include('../partials/header') %>
+            </header>
+
+            <img id="dog-image" src="/images/sephy7.jpg" alt="groomed poodle">
+
+            <div id="logo-large">
+                <img id="logo-large-image" src="/images/uts-grooming.png" alt="logo">
+                <hr id="logo-line-break">
+                <p id="logo-text">professional dog grooming based in houston, tx</p>
+            </div>
         </div>
-    
-    </body>
+        <%- include('../partials/footer') %>
+    </div>
+</body>
+
 
 </html>
