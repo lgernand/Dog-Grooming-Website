@@ -12,6 +12,14 @@ app.get("/", (req, res) => {
     res.render(__dirname + "/views/pages/index");
 })
 
+app.get("/about", (req, res) => {
+    res.render(__dirname + "/views/pages/about");
+})
+
+app.get("/contact", (req, res) => {
+    res.render(__dirname + "/views/pages/contact");
+})
+
 app.listen(3000, (req, res) => {
     console.log("spinning up...");
 })

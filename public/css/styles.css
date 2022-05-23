@@ -1,14 +1,14 @@
 :root {
-    --sandrift: #af8c84;
+    --sandrift: #6a6550;
 }
 
 body {
-    background-color: var(--sandrift);
+    background-color: black; 
     margin:0;
 }
 
 header {
-    background-color: #e2ccbf;
+    background-color: white;
     width: 100%;
     margin: 0 auto;
     padding-top: 0;
@@ -88,6 +88,7 @@ nav a:hover::before {
     }
 
     #logo {
+        clear:left;
         position: relative;
         display: flex;
         justify-content: center;
@@ -130,7 +131,9 @@ nav a:hover::before {
     opacity: 0.5;
 }
 
-
+#statement {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
 
 
 
