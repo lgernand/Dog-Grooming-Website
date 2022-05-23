@@ -69,7 +69,7 @@ nav a::before {
     content: '';
     display: block;
     height: 5px;
-    background-color: var(--sandrift);
+    background-color: black; 
 
     position: absolute;
     top: 0;
@@ -100,7 +100,7 @@ nav a:hover::before {
     float: left;
     height: 50%;
     width: 50%;
-    margin-left: 5%;
+    margin-left: 0;
 
     position: relative;
 
@@ -108,27 +108,50 @@ nav a:hover::before {
 }
 
 #logo-large {
-    position: relative;
+    position: absolute;
+    margin-top: 100px;
     display:inline-block;
 }
 
 #logo-large-image {
     top: 150px;
-    margin-left: 17%;
-    height: 60%;
-    width: 60%;
-    opacity: 0.5;
+    height: 60px;
+    width: 600px;
     position: relative;
 }
 
-#logo-text {
-    position: absolute;
+#logo-line-break {
+    position: relative;
     margin-top: 175px;
+}
+
+#logo-text {
+    margin-top: 35px;
     text-transform: uppercase;
     text-align: center;
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: white;
     font-weight: 100;
     opacity: 0.5;
+}
+
+@media screen and (max-width: 1198px) {
+
+    #logo-large{
+        margin-top: 50px;
+        position: relative;
+        padding-bottom: 100px;
+    }
+    #dog-image {
+        margin-left: 10%;
+    }
+    #logo-large-image {
+        position: relative;
+        width: 85%;
+        margin-left: 10%;
+        margin-top: 0;
+    }
+
 }
 
 #statement {
