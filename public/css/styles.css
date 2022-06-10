@@ -1,202 +1,396 @@
 :root {
+
     --sandrift: #6a6550;
+
 }
+
+ 
+
+html, body {
+
+    margin:0;
+
+    padding:0;
+
+    height:100%;
+
+ }
+
+ 
 
 #page-container {
+
+    min-height: 100vh;
+
     position: relative;
-    min-height: 998px;
+
 }
+
+ 
 
 #content-wrap {
-    padding-bottom: 2.5rem;
+
+    padding-bottom: 60px;
+
 }
+
+ 
 
 body {
-    background-color: black; 
-    margin:0;
+
+    background-color: black;
+
+    padding-bottom: 60px;
+
 }
+
+ 
 
 header {
+
     background-color: white;
+
     width: 100%;
+
     margin: 0 auto;
+
     padding-top: 0;
 
+ 
+
 }
+
+ 
 
 header::after {
+
     content: "";
+
     display: table;
+
     clear: both;
+
 }
+
+ 
 
 .navbar {
+
     width: 80%;
+
     margin: 0 auto;
+
     padding-top: 0;
+
 }
+
+ 
 
 #logo {
+
     float: left;
+
     height: 50x;
+
     width: 50px;
+
     padding: 10px;
+
     opacity: 0.5;
+
 }
+
+ 
 
 nav {
+
     float: right;
+
 }
+
+ 
 
 nav ul {
+
     margin: 0;
+
     padding: 0;
+
     list-style: none;
+
 }
+
+ 
 
 nav li {
+
     display: inline-block;
+
     margin-left: 70px;
+
     padding-top: 25px;
 
+ 
+
     position: relative;
+
 }
+
+ 
 
 nav a {
+
     text-transform: uppercase;
+
     color: grey;
+
     text-decoration: none;
+
     font-family: 'Montserrat', sans-serif;
+
     font-weight: 100;
+
 }
+
+ 
 
 nav a:hover {
+
     color: var(--sandrift);
+
 }
+
+ 
 
 nav a::before {
+
     content: '';
+
     display: block;
+
     height: 5px;
-    background-color: black; 
+
+    background-color: black;
+
+ 
 
     position: absolute;
+
     top: 0;
+
     width: 0%;
 
+ 
+
     transition: all ease-in-out 250ms;
+
 }
+
+ 
 
 nav a:hover::before {
+
     width: 100%;
+
 }
+
+ 
 
 @media screen and (max-width: 785px) {
+
     nav ul {
+
         display: none;
+
     }
+
+ 
 
     #logo {
+
         clear:left;
+
         position: relative;
+
         display: flex;
+
         justify-content: center;
+
         width: 10%;
+
     }
+
 }
+
+ 
 
 #dog-image {
-    float: left;
+
     height: 50%;
+
     width: 50%;
+
     margin-left: 0;
 
+ 
+
     position: relative;
+
+ 
 
     min-width: 378px;
+
 }
+
+ 
 
 #logo-large {
+
     position: absolute;
+
     margin-top: 100px;
+
     display:inline-block;
+
 }
+
+ 
 
 #logo-large-image {
+
     top: 150px;
+
     height: 60px;
+
     width: 600px;
+
     position: relative;
+
 }
+
+ 
 
 #logo-line-break {
+
     position: relative;
+
     margin-top: 175px;
+
 }
 
+ 
+
 #logo-text {
+
     margin-top: 35px;
+
     text-transform: uppercase;
+
     text-align: center;
+
     font-family: 'Yanone Kaffeesatz', sans-serif;
+
     color: white;
+
     font-weight: 100;
+
     opacity: 0.5;
+
 }
+
+ 
 
 @media screen and (max-width: 1198px) {
 
+ 
+
     #logo-large{
+
         margin-top: 50px;
+
         position: relative;
+
         padding-bottom: 100px;
-    }
-    #dog-image {
-        margin-left: 10%;
-    }
-    #logo-large-image {
-        position: relative;
-        width: 85%;
-        margin-left: 10%;
-        margin-top: 0;
+
     }
 
+    #dog-image {
+
+        margin-left: 10%;
+
+    }
+
+    #logo-large-image {
+
+        position: relative;
+
+        width: 85%;
+
+        margin-left: 10%;
+
+        margin-top: 0;
+
+    }
+
+ 
+
 }
+
+ 
 
 #statement {
+
     font-family: 'Yanone Kaffeesatz', sans-serif;
+
 }
+
+ 
 
 #footer {
+
     position: absolute;
+
     background-color: grey;
+
     bottom: 0;
+
     width: 100%;
-    height: 5rem;            
+
+    height: 60px;            
+
 }
+
+ 
 
 #web-sig, #email-address {
+
     position: absolute;
+
     font-family: 'Montserrat', sans-serif;
+
     opacity: 0.5;
+
 }
+
+ 
 
 #web-sig {
+
     bottom: 5px;
+
     left: 50px;
+
 }
+
+ 
 
 #email-address {
+
     right: 50px;
+
     bottom: 4px;
+
 }
-
-
-
-
-
-
-
 
 
 
